@@ -1,7 +1,7 @@
 # 🌟 <h1>EcoInsight: Retail Analytics Dashboard</h1>
 
 <div align="center">
-  <img src="./UI_images/UI1.png" alt="Dashboard Overview">
+  <img src="./UI_images/UI1.png" width="45%" alt="Dashboard Overview">
   <img src="./UI_images/UI2.png" width="45%" alt="Revenue Analysis">
 </div>
 
@@ -20,7 +20,8 @@ EcoInsight is a powerful retail analytics dashboard that transforms raw sales da
 
 <div align="center">
   <img src="./UI_images/UI3.png" width="45%" alt="Customer Analysis">
-  <img src="./UI_images/UI4.png" width="45%" alt="Geographic Analysis">
+  <img src="./UI_images/UI4.1.png" width="45%" alt="Geographic Analysis-1">
+  <img src="./UI_images/UI4.2.png" width="45%" alt="Geographic Analysis-2">
 </div>
 
 ## 🚀 Technology Stack
