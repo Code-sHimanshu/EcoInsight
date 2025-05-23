@@ -21,7 +21,7 @@ EcoInsight is a powerful retail analytics dashboard that transforms raw sales da
 <div align="center">
   <img src="./UI_images/UI3.png" width="85%" alt="Customer Analysis">
   <img src="./UI_images/UI4.1.png" width="45%" alt="Geographic Analysis-1">
-  <img src="./UI_images/UI4.2.png" width="45%" alt="Geographic Analysis-2">
+  <img src="./UI_images/UI4.2.png" width="45%" height="65%" alt="Geographic Analysis-2">
 </div>
 
 ## 🚀 Technology Stack
