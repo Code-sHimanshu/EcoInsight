@@ -1,7 +1,7 @@
 # 🌟 <h1>EcoInsight: Retail Analytics Dashboard</h1>
 
 <div align="center">
-  <img src="./UI_images/UI1.png" width="45%" alt="Dashboard Overview">
+  <img src="./UI_images/UI1.png" alt="Dashboard Overview">
   <img src="./UI_images/UI2.png" width="45%" alt="Revenue Analysis">
 </div>
 
