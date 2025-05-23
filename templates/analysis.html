@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Analysis | EcoInsight Analytics{% endblock %}
+{% block content %}
+<div class="row mb-3">
+    <div class="col-12">
+        <form method="get" class="d-flex flex-wrap align-items-center">
+            <label class="me-2 text-white">Region:</label>
+            {% for region in regions %}
+                <button name="region" value="{{ region }}" type="submit"
+                        class="btn region-btn {% if region == selected_region %}selected{% endif %}">
+                    {{ region }}
+                </button>
+            {% endfor %}
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Top Products</h5>
+                <div id="top-products-plot"></div>
+                <a href="{{ url_for('download_csv', datatype='top_products') }}" class="btn btn-outline-primary mt-2">Download Top Products (CSV)</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Revenue by Country</h5>
+                <div id="country-revenue-plot"></div>
+                <a href="{{ url_for('download_csv', datatype='country_revenue') }}" class="btn btn-outline-primary mt-2">Download Country Revenue (CSV)</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Customer Purchase Patterns</h5>
+                <div id="customer-patterns-plot"></div>
+                <a href="{{ url_for('download_csv', datatype='customer_patterns') }}" class="btn btn-outline-primary mt-2">Download Customer Patterns (CSV)</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+{{ top_products_plot|safe }}
+{{ country_revenue_plot|safe }}
+{{ customer_patterns_plot|safe }}
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Overview | EcoInsight Analytics{% endblock %}
+{% block content %}
+<div class="row mb-3">
+    <div class="col-12">
+        <form method="get" class="d-flex flex-wrap align-items-center">
+            <label class="me-2 text-white">Region:</label>
+            {% for region in regions %}
+                <button name="region" value="{{ region }}" type="submit"
+                        class="btn region-btn {% if region == selected_region %}selected{% endif %}">
+                    {{ region }}
+                </button>
+            {% endfor %}
+        </form>
+    </div>
+</div>
+<div class="row text-center mb-4">
+    {% for metric in metrics %}
+    <div class="col-6 col-md-3 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{ metric.label }}</h5>
+                <p class="card-text fs-3 fw-bold">{{ metric.value }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Revenue Trend</h5>
+                <div id="revenue-plot"></div>
+                <a href="{{ url_for('download_csv', datatype='revenue') }}" class="btn btn-outline-primary mt-2">Download Revenue Data (CSV)</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+{{ plot_json|safe }}
+{% endblock %}
