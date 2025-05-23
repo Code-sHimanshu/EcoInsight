@@ -1,24 +1,60 @@
-# E-commerce Data Analysis Project
+# 🌟 <h1>EcoInsight: Retail Analytics Dashboard</h1>
 
-This project analyzes an e-commerce dataset to gain insights into sales patterns, customer behavior, and product performance.
+<div align="center">
+  <img src="UI1.png" width="45%" alt="Dashboard Overview">
+  <img src="UI2.png" width="45%" alt="Revenue Analysis">
+</div>
 
-## Project Structure
+## 📊 Overview
 
-- `ecommerce_analysis.py`: Main analysis script
-- `requirements.txt`: Python package dependencies
-- `Online Retail.xlsx`: Input dataset
-- Generated plots:
-  - `monthly_revenue.png`: Monthly revenue trends
-  - `top_products.png`: Top 10 products by quantity
-  - `country_distribution.png`: Revenue distribution by country
-  - `purchase_patterns.png`: Purchase patterns by day and hour
+EcoInsight is a powerful retail analytics dashboard that transforms raw sales data into actionable insights, helping businesses optimize operations and boost revenue through data-driven decisions.
 
-## Setup
+## ✨ Key Features
 
-1. Create a virtual environment (recommended):
+- 📈 Real-time revenue tracking and forecasting
+- 🛍️ Customer segmentation and behavior analysis
+- 📊 Interactive visualizations and dashboards
+- 🔮 Advanced predictive analytics
+- 🌍 Geographic sales analysis
+- 📱 Responsive and modern UI
+
+<div align="center">
+  <img src="UI3.png" width="45%" alt="Customer Analysis">
+  <img src="UI4.png" width="45%" alt="Geographic Analysis">
+</div>
+
+## 🚀 Technology Stack
+
+- **Backend**: Python, Flask
+- **Data Analysis**: Pandas, NumPy
+- **Machine Learning**: XGBoost, Prophet
+- **Visualization**: Plotly
+- **Frontend**: HTML, CSS, JavaScript
+- **Deployment**: Render
+
+<div align="center">
+  <img src="UI5.png" width="45%" alt="Product Analysis">
+  <img src="UI6.png" width="45%" alt="Time Series Analysis">
+</div>
+
+## 📈 Analytics Capabilities
+
+- Revenue forecasting using advanced ML models
+- Customer segmentation and RFM analysis
+- Product performance tracking
+- Geographic sales distribution
+- Time series analysis and trend detection
+- Anomaly detection in sales patterns
+
+<div align="center">
+  <img src="UI7.png" width="45%" alt="Forecasting">
+</div>
+
+## 🛠️ Installation
+
+1. Clone the repository:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+git clone https://github.com/yourusername/EcoInsight.git
 ```
 
 2. Install dependencies:
@@ -26,31 +62,29 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Running the Analysis
-
-Execute the main script:
+3. Run the application:
 ```bash
-python ecommerce_analysis.py
+python app.py
 ```
 
-## Analysis Components
+## 🔮 Future Enhancements
 
-1. Data Collection and Cleaning
-   - Loads the Excel dataset
-   - Removes missing values
-   - Converts date formats
-   - Removes canceled orders
+- Real-time data integration
+- Advanced customer churn prediction
+- Inventory optimization recommendations
+- Custom report generation
+- API integration capabilities
 
-2. Exploratory Data Analysis
-   - Revenue trends over time
-   - Top products analysis
-   - Country-wise revenue distribution
-   - Customer purchase patterns
+## 📝 License
 
-3. Predictive Analysis
-   - Uses Random Forest to predict future sales
-   - Provides model performance metrics
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Output
+## 👥 Contributing
 
-The script generates several visualization files and prints analysis results to the console. 
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Himanshu Singh</p>
+</div> 
